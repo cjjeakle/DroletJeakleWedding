@@ -9,6 +9,11 @@ br {
     line-height: 75%;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 /**
  * Utilities
@@ -95,15 +100,13 @@ br {
 /**
  * Navigation Menu
  */
-#navigation {
-}
-
-#navigation li {
-    white-space: nowrap;
+#navigation li:after {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #navigation li:after {
-    content: " //";
+    content: "•";
 }
 
 #navigation li:last-child:after {
@@ -114,15 +117,6 @@ br {
     margin-top: 0px;
     margin-bottom: 0px;
     list-style-type:none;
-}
-
-#navigation ul:after {
-    content: "\a--";
-    white-space: pre;
-}
-
-#navigation ul:last-child:after {
-    content: "";
 }
 
 #navigation li {
@@ -140,6 +134,14 @@ br {
     color:#000;
 }
 
+/**
+ * page labels
+ */
+.page-label {
+    margin: auto;
+    width: 500px;
+    padding: 10px;
+}
 
 
 /**
