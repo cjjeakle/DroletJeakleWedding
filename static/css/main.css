@@ -9,7 +9,9 @@ body {
 
 .container {
     background-color: white;
-    box-shadow:0px 0px 25px #404040;
+    box-shadow: 0px 0px 25px #404040;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 br {
@@ -19,11 +21,6 @@ br {
 img {
     max-width: 100%;
     max-height: 100%;
-}
-
-p {
-    padding-left: 3em;
-    padding-right: 3em;
 }
 
 /**
@@ -151,6 +148,18 @@ p {
 .page-label {
     max-width: 100%;
     width: 500px;
+}
+
+/**
+ * Photo Grid
+ */
+.photoGrid {
+    text-align: center;
+}
+
+.photoGrid img {
+    max-width: 100%;
+    width: 1000px;
 }
 
 /**
