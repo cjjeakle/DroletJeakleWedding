@@ -9,7 +9,7 @@ body {
 
 .container {
     background-color: white;
-    box-shadow: 0px 0px 25px #404040;
+    box-shadow: 0px 0px 25px black;
     padding-left: 3em;
     padding-right: 3em;
 }
@@ -66,43 +66,10 @@ img {
  * header
  */
 .header {
-    border-top: 5px solid darkGray;
-    border-bottom: 1px solid lightGray;
+    border-top: 5px solid grey;
+    border-bottom: 1px solid lightgrey;
     margin-bottom: 1em;
 }
-
-#headerImg {
-    display: inline;
-    position: relative;
-    margin-right: 1em;
-}
-
-#headerImg img {
-    height: 6em;
-    position: absolute;
-}
-
-#headerText {
-    display: inline-block;
-    float: bottom;
-    text-align: left;
-    height:auto;
-    width: auto;
-    margin-left: 6em;
-    margin-top: 1em;
-    margin-bottom: 0em;
-}
-
-#headerText h2{
-     line-height: 0%;
-     white-space: nowrap;
-}
-
-#headerDetails {
-    margin-left: .25em;
-    line-height: 1.6em;
-}
-
 
 
 /**
@@ -124,7 +91,7 @@ img {
 #navigation ul {
     margin-top: 0px;
     margin-bottom: 0px;
-    list-style-type:none;
+    list-style-type: none;
 }
 
 #navigation li {
@@ -132,22 +99,32 @@ img {
 }
 
 #navigation a {
-    text-decoration:none;
-    color:#666767;
-    outline:none;
+    text-decoration: none;
+    color: black;
+    outline: none;
     line-height: 200%;
 }
 
 #navigation a:hover {
-    color:#000;
+    color: black;
 }
 
 /**
- * page labels
+ * page titles
  */
-.page-label {
-    max-width: 100%;
-    width: 500px;
+.page-title-container {
+    padding: .25em;
+    outline: thick solid grey;
+    margin-bottom: 1em;
+}
+
+.page-title {
+    padding-left: .25em;
+    padding-right: .25em;
+    outline: medium solid lightgrey;
+    font-size: 48px;
+    font-family: 'Pinyon Script', cursive;
+    text-align: center;
 }
 
 /**
@@ -161,11 +138,3 @@ img {
     max-width: 100%;
     width: 1000px;
 }
-
-/**
- * footer
- */
-.footer {
-    //border-top: 1px solid lightGray;
-}
-
