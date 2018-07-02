@@ -2,7 +2,7 @@
  * Overrides
  */
 body {
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Cardo', serif;
     background-color:#182c43;
     margin-bottom: 3em;
 }
@@ -137,4 +137,16 @@ img {
 .photoGrid img {
     max-width: 100%;
     width: 1000px;
+}
+
+/**
+ * Schedule
+ */
+.schedule ul {
+    list-style-type: none;
+}
+
+.schedule .note {
+    font-style: italic;
+    padding-left: 2em;
 }
