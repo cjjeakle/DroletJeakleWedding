@@ -130,11 +130,58 @@ img {
 /**
  * Photo Grid
  */
-.photoGrid {
+.photo-grid {
     text-align: center;
 }
 
-.photoGrid img {
+.photo-grid .row .columns {
+    display: inline-block;
+    float: none;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.photo-grid img {
+    max-width: 100%;
+    width: 1000px;
+}
+
+/**
+ * Slide Show
+ */
+ .slide-show {
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide-show .thumbnails {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    height: 5em;
+}
+
+.slide-show .thumbnail-container {
+    text-align: center;
+    margin-left: .25em;
+    margin-right: .25em;
+    flex: 1 0 0px;
+    height: auto;
+}
+
+.slide-show .thumbnail {
+    object-fit: cover;
+    opacity: .5;
+}
+
+.slide-show .active,
+.slide-show .thumbnail:hover {
+    opacity: 1;
+}
+
+.slide-show img {
     max-width: 100%;
     width: 1000px;
 }
