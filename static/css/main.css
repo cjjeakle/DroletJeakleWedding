@@ -146,28 +146,24 @@ img {
  */
  .slide-show {
     text-align: center;
-    box-sizing: border-box;
-    position: relative;
 }
 
 .slide-show .thumbnails {
-    list-style: none;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    height: 5em;
+    max-height: 5em;
+    margin-bottom: .5em;
 }
 
 .slide-show .thumbnail-container {
     text-align: center;
     margin-left: .25em;
     margin-right: .25em;
-    flex: 1 0 0px;
-    height: auto;
 }
 
 .slide-show .thumbnail {
     object-fit: cover;
+    min-height: 5em;
     opacity: .5;
 }
 
