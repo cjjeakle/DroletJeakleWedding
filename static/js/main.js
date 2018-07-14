@@ -1,4 +1,4 @@
-function showSlide(slideShowName, displayElementId, thumbnailIndex, desiredImageUrl) {
+function showSlide(slideShowName, displayElementId, desiredImageUrl) {
     let displayImage = document.getElementById(displayElementId);
     displayImage.style.display = '';
     displayImage.src = desiredImageUrl;
@@ -6,16 +6,36 @@ function showSlide(slideShowName, displayElementId, thumbnailIndex, desiredImage
     let thumbnails = document.getElementsByClassName(slideShowName + ' thumbnail');
     for (let i = 0; i < thumbnails.length; i++) {
         let thumbnail = thumbnails[i];
-        if (thumbnail.src.replace(window.location.origin, '') === desiredImageUrl) {
-            if (thumbnail.className.indexOf('active') != -1) {
-                displayImage.src = '';
-                displayImage.style.display = 'none';
-                thumbnail.className = thumbnail.className.replace(' active', '');
+        if (isImageBeingDisplayed(thumbnail, desiredImageUrl)) {
+            if (isThumbnailActive(thumbnail)) {
+                hideMainImage(displayImage);
+                deactivateThumbnail(thumbnail);
             } else {
-                thumbnail.className += ' active';
+                activateThumbnail(thumbnail);
             }
         } else {
-            thumbnail.className = thumbnail.className.replace(' active', '');
+            deactivateThumbnail(thumbnail);
         }
     }
+}
+
+function isImageBeingDisplayed(thumbnail, desiredImageUrl) {
+    return thumbnail.src.replace(window.location.origin, '') === desiredImageUrl;
+}
+
+function isThumbnailActive(thumbnail) {
+    return thumbnail.className.indexOf('active') != -1;
+}
+
+function activateThumbnail(thumbnail) {
+    thumbnail.className += ' active';
+}
+
+function hideMainImage(displayImage) {
+    displayImage.src = '';
+    displayImage.style.display = 'none';
+}
+
+function deactivateThumbnail(thumbnail) {
+    thumbnail.className = thumbnail.className.replace(' active', '');
 }

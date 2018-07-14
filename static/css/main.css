@@ -176,9 +176,14 @@ img {
     opacity: .5;
 }
 
-.slide-show .active,
-.slide-show .thumbnail:hover {
+.slide-show .active {
     opacity: 1;
+}
+/* Use a media query for hover to keep touch events from locking hover as true. */
+@media (hover: hover) {
+    .slide-show .thumbnail:hover { 
+        opacity: 1
+    }
 }
 
 .slide-show img {
