@@ -48,19 +48,14 @@ img {
     margin-left: 2em;
 }
 
-.min-width {
-    display: inline-block;
+/* On any device supporting columns, enable the vertical center util */
+@media (min-width: 550px) {
+    .vertical-center-container {
+        display: flex;
+        align-items: center;
+        min-width: 150px;
+    }
 }
-
-.bold {
-    font-weight: bold;
-}
-
-.small-hr {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
 
 /**
  * header
