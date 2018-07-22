@@ -2,7 +2,7 @@
 title: Chris and Anne are getting married!
 description: The website for Chris Jeakle and Anne Drolet's wedding.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.chrisandannegetmarried.com" # the base hostname & protocol for your site
+url: "http://www.droletjeaklewedding.com" # the base hostname & protocol for your site
 github_username: cjjeakle
 
 # Build settings
