@@ -164,7 +164,21 @@ img {
 .slide-show .thumbnail {
     object-fit: cover;
     min-height: 5em;
+    max-height: 5em;
     opacity: .5;
+}
+
+.slide-show .zoom-prompt {
+    pointer-events: none;
+    position: relative;
+    bottom: 1.9em;
+    left: -40%;
+}
+
+.slide-show .zoom-prompt span{
+    border-top-right-radius: .5em .5em;
+    opacity: .7;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .slide-show .active {
