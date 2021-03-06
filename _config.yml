@@ -2,7 +2,7 @@
 title: Anne Drolet and Chris Jeakle's Wedding
 description: The website for Chris Jeakle and Anne Drolet's wedding.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.droletjeaklewedding.com" # the base hostname & protocol for your site
+url: "http://www.chrisjeakle.com/droletjeaklewedding" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
