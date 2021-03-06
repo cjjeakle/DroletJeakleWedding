@@ -14,7 +14,7 @@ layout: default
   <div class="six columns">
     <div>
       <img
-        src="/static/img/location_photos/hilton_garden_inn.jpeg"
+        src={{"/static/img/location_photos/hilton_garden_inn.jpeg" | | relative_url }}
         title="Photo used with permission of the Hilton Garden Inn Downtown Detroit."
       />
     </div>
@@ -75,11 +75,11 @@ layout: default
 
 <p>
   Free parking is available at Ste. Anne de Detroit, and parking passes are available for the Colony Club.
-  Please see the <a href="/location_details/">Venues</a> page for more detailed parking information. Parking at the Hilton Garden Inn is by valet only.
+  Please see the <a href={{"/location_details/" | relative_url }}>Venues</a> page for more detailed parking information. Parking at the Hilton Garden Inn is by valet only.
 </p>
 <p>
   A shuttle will be available between the Hilton Garden Inn and the Colonly Club immediately prior to and during the reception.
-  <a href="/location_details/shuttle/colony_club">This page</a> has more detailed shuttle information.
+  <a href={{"/location_details/shuttle/colony_club" | relative_url }}>This page</a> has more detailed shuttle information.
 </p>
 <p>
   Additionally, <a href="https://www.uber.com/cities/detroit/">Uber</a> and <a href="https://www.lyft.com/rider/cities/detroit-mi">Lyft</a> are both available in Downtown Detroit.
